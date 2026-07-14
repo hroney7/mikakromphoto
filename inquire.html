@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inquire | Mika Krommenhoek Photography</title>
+<meta name="description" content="Ready to book a session with Mika Krommenhoek Photography? Fill out the inquiry form and let's get started.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">mika krommenhoek <span>photography</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pricing.html">Pricing Guide</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="inquire.html" class="nav-cta active">Inquire</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero" style="background: linear-gradient(rgba(58,51,47,0.45), rgba(58,51,47,0.45)), url('images/headshot.jpg'); background-size:cover; background-position:center; color:#fff;">
+  <h1 style="color:#fff;">I'm excited to work with you!</h1>
+  <p style="color:#f1e2dd;">Fill in your details below and let me know what session you're interested in.</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="inquiry-wrap">
+
+      <form id="inquiry-form" action="https://formspree.io/f/xjgnvvza" method="POST">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">First and Last Name <span class="required">*</span></label>
+            <input type="text" id="name" name="Full Name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="Email" placeholder="Enter your email address" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number <span class="required">*</span></label>
+          <input type="tel" id="phone" name="Phone" placeholder="E.g. 801 555 0123" required>
+        </div>
+
+        <div class="form-group">
+          <label for="session-type">What type of session are you looking for? <span class="required">*</span></label>
+          <select id="session-type" name="Session Type" required>
+            <option value="" selected disabled>Select an answer</option>
+            <option>Wedding Day Coverage</option>
+            <option>Wedding Package (Basic $1,150 / Standard $1,300 / Premium $1,600)</option>
+            <option>Bridals</option>
+            <option>Engagement / Couples</option>
+            <option>Portrait Session</option>
+            <option>Family Session</option>
+            <option>High School Dance</option>
+            <option>Other / Not Sure Yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="session-date">What date will the session take place? <span class="required">*</span></label>
+          <input type="date" id="session-date" name="Preferred Date" required>
+        </div>
+
+        <div class="form-group">
+          <label>Is this date flexible?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="Date Flexible" value="Yes"> Yes</label>
+            <label><input type="radio" name="Date Flexible" value="No"> No</label>
+            <label><input type="radio" name="Date Flexible" value="Potentially"> Potentially</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Where will the session take place?</label>
+          <input type="text" id="location" name="Location" placeholder="E.g. Provo, UT (or type n/a if unsure)">
+        </div>
+
+        <div class="form-group">
+          <label for="details">Tell me more about this session</label>
+          <textarea id="details" name="Project Details" placeholder="What do I need to know about your session?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Where are you in the planning process?</label>
+          <div class="radio-group" style="flex-direction:column; gap:12px;">
+            <label><input type="radio" name="Planning Stage" value="Ready to book"> We are set on you and ready to book!</label>
+            <label><input type="radio" name="Planning Stage" value="Not 100%"> Really want to work with you but just not 100%!</label>
+            <label><input type="radio" name="Planning Stage" value="Shopping around"> Just shopping around</label>
+            <label><input type="radio" name="Planning Stage" value="Gathering info"> Gathering information</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="heard-about">How did you hear about me? <span class="required">*</span></label>
+          <select id="heard-about" name="Referral Source" required>
+            <option value="" selected disabled>Select an answer</option>
+            <option>Instagram (@mikakromphoto)</option>
+            <option>Google Search</option>
+            <option>Referral from a friend or family member</option>
+            <option>Referral from another vendor</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="inquiry-photo">
+          <img src="images/headshot.jpg" alt="Mika Krommenhoek">
+          <h3 style="text-transform:uppercase; letter-spacing:0.08em; font-size:1rem;">Thank You For Your Inquiry</h3>
+          <p class="inquiry-note">I typically respond to inquiries within 1-2 business days. If you inquire on a weekend or holiday, expect a response the following business day. If you don't hear back within that time, feel free to shoot me another email!</p>
+          <p style="text-align:center; font-family:'Playfair Display', serif;">Thanks!!</p>
+        </div>
+
+        <p class="form-disclaimer">By clicking Submit, you agree to be contacted by Mika Krommenhoek Photography via email and/or phone regarding your inquiry.</p>
+
+        <button type="submit" class="btn" style="width:100%;">Submit</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html" class="logo">mika krommenhoek <span>photography</span></a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pricing.html">Pricing Guide</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="inquire.html">Inquire</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/mikakromphoto/" target="_blank" rel="noopener">Instagram: @mikakromphoto</a>
+    </div>
+    <div class="footer-copy">&copy; <span id="year"></span> Mika Krommenhoek Photography. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
