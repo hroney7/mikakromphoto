@@ -112,8 +112,9 @@ and the Portfolio page. Every image has a fixed filename — to swap any
 individual photo out later, just save the new one over the old file
 using the **exact same filename**, and it'll show up automatically:
 
-- `images/hero-1.jpg` through `images/hero-5.jpg` — the home page hero slideshow (see below)
-- `images/headshot.jpg` — used on the About page
+- `images/hero-1.jpg` through `images/hero-7.jpg` — the home page hero slideshow (see below)
+- `images/headshot.jpg` — Mika with her fiance, used on the About page
+- `images/headshot-2.jpg` — Mika holding her camera, used on the About page and as the circular profile photo in the "Hi, I'm so glad you're here" section on the home page
 - `images/portfolio-cover.jpg` — the large cover photo behind "My Portfolio" at the top of the Portfolio page
 - `images/portfolio-1.jpg` through `images/portfolio-20.jpg` — the portfolio grid
 - `images/review-1.jpg` through `images/review-4.jpg` — client photos on the Reviews page
@@ -125,10 +126,12 @@ new (like `portfolio-21.jpg`) — then just add that image file to the
 
 ## Hero slideshow photos
 
-The home page banner automatically cycles through 5 photos (`hero-1.jpg`
-through `hero-5.jpg`), fading from one to the next every 5 seconds, in
-this order: couple on the beach, family group on the beach, senior guy
-in the orchard, wedding day recessional, missionaries at the temple.
+The home page banner automatically cycles through 7 photos (`hero-1.jpg`
+through `hero-7.jpg`), fading from one to the next every 5 seconds, in
+this order: Mika taking a picture (this one plays first), couple on the
+beach, family group on the beach, senior guy in the orchard, wedding day
+recessional, missionaries at the temple, and an evening wedding exit
+with bubbles and string lights.
 
 To use a different number of photos, open `index.html` and find the
 `<div class="hero-slideshow">` block near the top. Each photo is one line:
@@ -140,6 +143,27 @@ To use a different number of photos, open `index.html` and find the
 Copy or delete lines to match how many photos you want (the very first
 one needs `class="hero-slide active"` — only that one). Landscape photos
 around 1800x1000px work best, since the hero banner is wide and short.
+
+If a photo's main subject ends up cropped off (the banner is very wide
+and short, so tall or centered subjects can get cut at the top or
+bottom), add a `background-position` to that photo's line to nudge the
+visible crop up or down, like this:
+
+```html
+<div class="hero-slide" style="background-image: url('images/hero-3.jpg'); background-position: center 75%;"></div>
+```
+
+Higher percentages shift the visible window down the photo (showing
+more of the bottom), lower percentages shift it up.
+
+## Home page profile photo
+
+The circular photo next to "Hi, I'm so glad you're here" on the home
+page uses `images/headshot.jpg` (the same photo used on the About page).
+To swap it for a different photo, either save a new image over
+`images/headshot.jpg`, or open `index.html`, find the `.home-intro-photo`
+block near the top, and point its `<img src="...">` at a different
+filename in `images/`.
 
 ## Adding more reviews
 
