@@ -514,8 +514,19 @@ img { max-width: 100%; display: block; }
 .review-card {
   background: var(--white);
   border-radius: var(--radius);
-  padding: 30px;
+  overflow: hidden;
   box-shadow: var(--shadow);
+}
+
+.review-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.review-body {
+  padding: 30px;
 }
 
 .review-card .stars {
@@ -525,17 +536,7 @@ img { max-width: 100%; display: block; }
 }
 
 .review-card .reviewer {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   margin-top: 16px;
-}
-
-.review-card .reviewer img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .review-card .reviewer strong { display: block; }
