@@ -270,6 +270,29 @@ img { max-width: 100%; display: block; }
   margin-bottom: 10px;
 }
 
+/* ---------- Home intro (profile photo) ---------- */
+
+.home-intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.home-intro-photo img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  border: 4px solid var(--white);
+  display: block;
+}
+
+.home-intro-text p { margin-top: 14px; }
+.home-intro-text .btn { margin-top: 22px; }
+
 /* ---------- Teaser grid (home page) ---------- */
 
 .teaser-grid {
@@ -452,6 +475,14 @@ img { max-width: 100%; display: block; }
 .about-layout img {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  width: 100%;
+  display: block;
+}
+
+.about-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .fact-list {
@@ -668,6 +699,7 @@ img { max-width: 100%; display: block; }
   .package-group { padding: 26px; }
   .reviews-grid { grid-template-columns: 1fr; }
   .about-layout { grid-template-columns: 1fr; }
+  .home-intro { grid-template-columns: 1fr; text-align: center; justify-items: center; margin-bottom: 50px; }
   .form-row { grid-template-columns: 1fr; }
   .hero-content h1 { font-size: 2.3rem; }
 
